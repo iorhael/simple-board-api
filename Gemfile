@@ -47,3 +47,8 @@ group :development do
   # gem "spring"
 end
 
+group :test do
+  # Simple one-liner tests for common Rails functionality [https://github.com/thoughtbot/shoulda-matchers]
+  gem 'shoulda-matchers', '~> 6.0'
+end
+
