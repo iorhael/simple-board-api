@@ -56,5 +56,7 @@ group :test do
   gem 'shoulda-matchers', '~> 6.0'
   # Code coverage for Ruby [https://github.com/simplecov-ruby/simplecov]
   gem 'simplecov', require: false
+  # Cleaning databases using ActiveRecord [https://github.com/DatabaseCleaner/database_cleaner-active_record]
+  gem 'database_cleaner-active_record'
 end
 
