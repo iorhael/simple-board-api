@@ -40,6 +40,8 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   # RSpec for Rails 6+ [https://github.com/rspec/rspec-rails/tree/6-1-maintenance?tab=readme-ov-file]
   gem 'rspec-rails', '~> 6.1.0'
+  # Library for generating fake data [https://github.com/faker-ruby/faker]
+  gem 'faker'
 end
 
 group :development do
