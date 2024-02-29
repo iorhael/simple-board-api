@@ -42,6 +42,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 6.1.0'
   # Library for generating fake data [https://github.com/faker-ruby/faker]
   gem 'faker'
+  # Factory_bot_rails provides Rails integration for factory_bot [https://github.com/thoughtbot/factory_bot_rails]
+  gem 'factory_bot_rails'
 end
 
 group :development do
