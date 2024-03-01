@@ -1,0 +1,27 @@
+name: Linting code
+on: push
+
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Ruby and Gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Run Bundler Audit
+        run: bundle exec bundle audit
+
+      - name: Run Bundler Leak
+        run: |
+          bundle exec bundle leak update
+          bundle exec bundle leak
+
+      - name: Run Rubocop
+        run: bundle exec rubocop
