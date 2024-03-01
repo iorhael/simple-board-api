@@ -38,10 +38,27 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  # RSpec for Rails 6+ [https://github.com/rspec/rspec-rails/tree/6-1-maintenance?tab=readme-ov-file]
+  gem 'rspec-rails', '~> 6.1.0'
+  # Library for generating fake data [https://github.com/faker-ruby/faker]
+  gem 'faker'
+  # Factory_bot_rails provides Rails integration for factory_bot [https://github.com/thoughtbot/factory_bot_rails]
+  gem 'factory_bot_rails'
 end
 
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+
+group :test do
+  # Simple one-liner tests for common Rails functionality [https://github.com/thoughtbot/shoulda-matchers]
+  gem 'shoulda-matchers', '~> 6.0'
+  # Code coverage for Ruby [https://github.com/simplecov-ruby/simplecov]
+  gem 'simplecov', require: false
+  # Cleaning databases using ActiveRecord [https://github.com/DatabaseCleaner/database_cleaner-active_record]
+  gem 'database_cleaner-active_record'
+  # Cleaning redis databases [https://github.com/DatabaseCleaner/database_cleaner-redis]
+  gem 'database_cleaner-redis'
 end
 
