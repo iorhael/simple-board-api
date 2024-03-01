@@ -87,6 +87,9 @@ GEM
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
+    database_cleaner-redis (2.0.0)
+      database_cleaner-core (~> 2.0.0)
+      redis
     date (3.3.4)
     debug (1.9.1)
       irb (~> 1.10)
@@ -192,6 +195,10 @@ GEM
     rake (13.1.0)
     rdoc (6.6.2)
       psych (>= 4.0.0)
+    redis (5.1.0)
+      redis-client (>= 0.17.0)
+    redis-client (0.20.0)
+      connection_pool
     reline (0.4.3)
       io-console (~> 0.5)
     rspec-core (3.13.0)
@@ -242,6 +249,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   database_cleaner-active_record
+  database_cleaner-redis
   debug
   factory_bot_rails
   faker
