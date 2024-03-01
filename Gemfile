@@ -59,6 +59,8 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  # Make your Rubies go faster [https://github.com/DamirSvrtan/fasterer]
+  gem 'fasterer'
 end
 
 group :test do
