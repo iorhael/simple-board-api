@@ -44,6 +44,8 @@ group :development, :test do
   gem 'faker'
   # Factory_bot_rails provides Rails integration for factory_bot [https://github.com/thoughtbot/factory_bot_rails]
   gem 'factory_bot_rails'
+  # Enforcing Rails best practices and coding conventions [https://github.com/rubocop/rubocop-rails]
+  gem 'rubocop-rails', require: false
 end
 
 group :development do
