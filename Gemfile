@@ -52,6 +52,8 @@ group :development, :test do
   gem 'rubocop-rspec', require: false
   # Patch-level verification for Bundler [https://github.com/rubysec/bundler-audit]
   gem 'bundler-audit'
+  # Known-leaky gems verification for bundler [https://github.com/rubymem/bundler-leak]
+  gem 'bundler-leak'
 end
 
 group :development do
