@@ -50,6 +50,8 @@ group :development, :test do
   gem 'rubocop-rails', require: false
   # Code style checking for RSpec files [https://github.com/rubocop/rubocop-rspec]
   gem 'rubocop-rspec', require: false
+  # Patch-level verification for Bundler [https://github.com/rubysec/bundler-audit]
+  gem 'bundler-audit'
 end
 
 group :development do
