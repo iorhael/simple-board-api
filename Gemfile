@@ -56,6 +56,8 @@ group :development, :test do
   gem 'bundler-audit'
   # Known-leaky gems verification for bundler [https://github.com/rubymem/bundler-leak]
   gem 'bundler-leak'
+  # A Ruby gem to load environment variables from `.env` [https://github.com/bkeepers/dotenv]
+  gem 'dotenv-rails'
 end
 
 group :development do
