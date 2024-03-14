@@ -129,6 +129,8 @@ GEM
       rdoc
       reline (>= 0.4.2)
     json (2.7.1)
+    jwt (2.8.1)
+      base64
     language_server-protocol (3.17.0.3)
     loofah (2.22.0)
       crass (~> 1.0.2)
@@ -318,6 +320,7 @@ DEPENDENCIES
   factory_bot_rails
   faker
   fasterer
+  jwt
   pg (~> 1.1)
   puma (>= 5.0)
   rack-cors
