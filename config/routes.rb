@@ -9,4 +9,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'home#index'
+  post '/users/new', to: 'users#create'
+  get '/users/profile', to: 'users#show'
+  put '/users/update', to: 'users#update'
+  delete '/users/delete', to: 'users#destroy'
 end
