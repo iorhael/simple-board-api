@@ -11,4 +11,6 @@ class User < ApplicationRecord
   validates :email, :name, presence: true
   validates :email, uniqueness: { case_sensitive: false }
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
+
+  has_many :refresh_tokens, dependent: :delete_all
 end
