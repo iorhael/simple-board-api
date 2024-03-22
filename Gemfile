@@ -84,4 +84,6 @@ group :test do
   gem 'database_cleaner-active_record'
   # Cleaning redis databases [https://github.com/DatabaseCleaner/database_cleaner-redis]
   gem 'database_cleaner-redis'
+  # A base64url encoding/decoding library [https://github.com/nojima/base64url]
+  gem 'base64url'
 end
