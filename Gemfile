@@ -64,6 +64,8 @@ group :development, :test do
   gem 'bundler-leak'
   # A Ruby gem to load environment variables from `.env` [https://github.com/bkeepers/dotenv]
   gem 'dotenv-rails'
+  # Step-by-step debugging and stack navigation in Pry [https://github.com/deivid-rodriguez/pry-byebug]
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -71,8 +73,6 @@ group :development do
   # gem "spring"
   # Make your Rubies go faster [https://github.com/DamirSvrtan/fasterer]
   gem 'fasterer'
-  # Step-by-step debugging and stack navigation in Pry [https://github.com/deivid-rodriguez/pry-byebug]
-  gem 'pry-byebug'
 end
 
 group :test do
