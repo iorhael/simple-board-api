@@ -72,4 +72,8 @@ RSpec.describe User do
       it { expect(user.notification_method).to eq('telegram') }
     end
   end
+
+  describe 'associations' do
+    it { expect(user).to have_many(:refresh_tokens).dependent(:delete_all) }
+  end
 end

@@ -36,6 +36,10 @@ jobs:
           - 6379:6379
 
     steps:
+      - name: Set the value of JWT_SECRET_KEY
+        run:
+          echo "JWT_SECRET_KEY=$(openssl rand -hex 16)" >> "$GITHUB_ENV"
+
       - name: Checkout code
         uses: actions/checkout@v4
         with:
